@@ -6,4 +6,7 @@ use App\Http\Controllers\Auth;
 
 Route::redirect('/', '/login');
 
-Route::get('/login', [Auth::class, 'index']);
+Route::prefix('login')->group(function(){
+    Route::get('/', [Auth::class, 'index']);
+    Route::post('/', [Auth::class, 'login'])->name('login');
+});
