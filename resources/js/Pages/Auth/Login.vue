@@ -19,7 +19,7 @@
 <script>
 import '../../../css/login.css'
 import {useForm} from '@inertiajs/inertia-vue3'
-import {Inertia} from "@inertiajs/inertia";
+import {Inertia} from "@inertiajs/inertia"
 
 export default{
     data(){
