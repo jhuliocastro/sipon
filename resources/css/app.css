@@ -1,1 +1,99 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+*::-webkit-scrollbar {
+    width: 2px;
+}
+
+*::-webkit-scrollbar-track {
+    background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 20px;
+}
+
+html{
+    overflow: hidden;
+}
+
+.card-background{
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 100px grey;
+}
+
+.actions{
+    float: right;
+}
+
+.fader{
+    background-color: black;
+    opacity: 0.5;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 999;
+}
+
+.modal-actions{
+    box-shadow: 10px 10px 100px grey;
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 320px;
+    overflow: hidden;
+}
+
+.modal-actions .modal-actions-head{
+    background-color: #D3D3D3;
+    padding: 10px;
+}
+
+.modal-actions .modal-actions-head span{
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.modal-actions .modal-actions-body{
+    padding: 10px;
+    overflow-y: scroll;
+    height: calc(100vh - 116px);
+}
+
+.modal-actions .modal-actions-body .bread{
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal-actions .modal-actions-footer{
+    position: absolute;
+    background-color: #D3D3D3;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.modal-actions .modal-actions-footer .button-left{
+    width: 80px;
+    float: left;
+}
+
+.modal-actions .modal-actions-footer .button-right{
+    width: 80px;
+    float: right;
+}
+
+.obrigatorio{
+    font-size: 10px;
+    font-weight: bold;
+}

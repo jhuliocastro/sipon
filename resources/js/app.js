@@ -17,7 +17,7 @@ createInertiaApp({
             position: 'top-right',
             duration: 5000
         })
-      .use(Ziggy, ZiggyVue)
+      .use(ZiggyVue, Ziggy)
       .mount(el)
   },
 })
